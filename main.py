@@ -13,7 +13,7 @@ for i in enumerate(cba):
 abc = abc.split(' ')
 for (letter, kod) in zip(abc, cba):
     dletkod[letter] = kod
-bot = telebot.TeleBot("TOKEN")
+bot = telebot.TeleBot("1636066224:AAHbWsMnOTsNYUGScjo2dpugBOMaf0bp0R8")
 @bot.message_handler(commands=['start', 'help'])
 def start(message):
     bot.send_message(message.from_user.id, 'Для поиска в запросе ОБЯЗАТЕЛЬНО должно присутствовать НАЗВАНИЕ стиха, '
